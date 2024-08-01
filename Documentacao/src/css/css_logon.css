@@ -25,17 +25,10 @@ button{
     padding: 50px;
     transform: translate(+42%, +140%);
 }
-
-
-.login{
-    background-color: rgba(0, 0, 0, 0.8); /*código para deixar a cor preta transparente*/
-    position: absolute;
-    color: white;
-        /*códigos para centralizar a div*/
+#login{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    padding: 100px;
-    border-radius: 50px;
-   
+    position: absolute;
+    background-color: blue;
 }
