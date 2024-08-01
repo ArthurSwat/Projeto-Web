@@ -18,13 +18,7 @@ button{
     border-radius: 30px;
     color: white;
 }
-#texto_inicial{
-    color: white;
-    top: 50%;
-    left: 80%;
-    padding: 50px;
-    transform: translate(+42%, +140%);
-}
+
 #login{
     top: 50%;
     left: 50%;
