@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Receita</title>
+    <link rel="stylesheet" href="../css-receita/css_tela_add.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Adicionar Receita</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="recipe-name">Nome da Receita:</label>
+                <input type="text" id="recipe-name" name="recipe-name" required>
+            </div>
+            <div class="form-group">
+                <label for="ingredients">Ingredientes:</label>
+                <textarea id="ingredients" name="ingredients" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="instructions">Instruções:</label>
+                <textarea id="instructions" name="instructions" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Imagem da Receita:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+            <button type="submit">Adicionar Receita</button>
+        </form>
+    </div>
+</body>
+</html>
