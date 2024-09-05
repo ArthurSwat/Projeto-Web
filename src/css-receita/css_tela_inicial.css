@@ -57,9 +57,12 @@ nav ul li a {
 }
 
 .recipe-grid {
+    /*Ele subdivide uma superfície bidimensional em áreas menores*/
     display: grid;
+    /*repeat(3, 1fr) significa que o grid terá 3 colunas, e cada coluna terá uma largura igual de 1fr*/
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    /*Cria um espaço de 100px de cada coisa do grid*/
+    gap: 100px;
 }
 
 .recipe-item {
@@ -106,7 +109,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Código CSS existente */
+
 
 .add-recipe {
     margin-top: 40px;
