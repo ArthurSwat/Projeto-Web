@@ -66,18 +66,18 @@ body {
     background-color: #8332e1;
 }
 
-.back-to-login {
+.voltar-login {
     margin-top: 15px;
 }
 
-.back-to-login a {
+.voltar-login a {
     color: #8332e1;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s ease;
 }
 
-.back-to-login a:hover {
+.voltar-login a:hover {
     color: #8332e1;
 }
 
