@@ -10,3 +10,5 @@ include("conexao.php");
  $con->close();
 
 ?>
+<br>
+<a href="cadastro_usuario.php">Voltar</a>

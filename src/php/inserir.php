@@ -7,7 +7,12 @@ include("conexao.php");
 $con-> query("insert into bd_receita.usuarios (nome, email, senha) values ('$nome', '$email', '$senha')");
 
 
-echo "Inserido com sucesso!";
 $con-> close();
 
 ?>
+<br>
+
+<h1>
+    Parabéns, o usuário foi inserido!
+</h1>
+    <a href="cadastro_usuario.php">Ver usuários cadastrados</a>
