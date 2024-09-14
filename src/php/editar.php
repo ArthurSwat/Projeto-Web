@@ -1,7 +1,5 @@
 <meta charset="UTF-8">
-<h1>
-    Editar os dados do usuário
-</h1>
+
 
 <?php
 $id =$_GET["id"];
@@ -14,7 +12,7 @@ if($obj= $res->fetch_object()){
 }
 $con -> close();
 ?>
-<form  method="post" action="alterar.php" >
+<!--<form  method="post" action="alterar.php" >
     
     <label >
             ID do usuário:
@@ -43,4 +41,31 @@ $con -> close();
         <button>
             Editar
         </button>
-</form>
+</form>-->
+<link rel="stylesheet" href="../css-receita/criar_conta.css">
+<div class="container">
+        <div class="card">
+            <h2>Criar Conta</h2>
+            <form  method="post" action="alterar.php" >
+            <div class="input-group">
+                    <label for="username">Nome de Usuário</label>
+                    <input type="text" id="Usuario" name="nome" value="<?php echo $nome ?>" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" value="<?php echo $email; ?>" required>
+                </div>
+                <div class="input-group">
+                    <label for="Senha">Senha</label>
+                    <input type="password" id="Senha" name="senha" value="<?php echo $senha; ?>" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirmar-senha">ID</label>
+                    <input type="text" id="confirmar-senha" name="id"   value="<?php echo $id; ?>" required>
+                </div>
+                <button type="submit" class="btn">Confirmar alterações</button>
+            </form>
+
+        </div>
+    </div>
+
