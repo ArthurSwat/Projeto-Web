@@ -30,6 +30,9 @@ while($obj= $res -> fetch_object()){
     echo"<td>";
     echo "<a href='excluir.php?id=$id'> Excluir </a>";
     echo"</td>";
+    echo"<td>";
+    echo "<a href='editar.php?id=$id'> Editar </a>";
+    echo"</td>";
     echo"</tr>";
 }
 echo"</tbody>";
