@@ -8,4 +8,4 @@ echo "Excluido com sucesso!";
 ?>
 <br>
 
-<a href="cadastro_usuario.php">Voltar</a>
+<a href="listar.php">Voltar</a>

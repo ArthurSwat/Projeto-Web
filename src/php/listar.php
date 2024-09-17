@@ -9,11 +9,9 @@ echo"<thead>";
 echo"<tr>";
 echo"<th> Nome </th>";
 echo"<th> Email </th>";
-echo"<th> Senha </th>";
-echo"<th> Opções </th>";
-
+echo"<th colspan='2'> Opções </th>";
 echo"</tr>";
-echo"<thead>";
+echo"</thead>";
 echo"<tbody>";
 while($obj= $res -> fetch_object()){
     $id= $obj->id;
@@ -23,9 +21,6 @@ while($obj= $res -> fetch_object()){
     echo"</td>";
     echo"<td>";
     echo  $obj->email;
-    echo"</td>";
-    echo"<td>";
-    echo $obj->senha;
     echo"</td>";
     echo"<td>";
     echo "<a href='excluir.php?id=$id'> Excluir </a>";

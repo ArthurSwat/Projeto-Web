@@ -15,4 +15,4 @@ $con-> close();
 <h1>
     Parabéns, o usuário foi inserido!
 </h1>
-    <a href="cadastro_usuario.php">Ver usuários cadastrados</a>
+    <a href="listar.php">Ver usuários cadastrados</a>
