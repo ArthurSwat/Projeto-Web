@@ -1,33 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar Conta - Culinária</title>
     <link rel="stylesheet" href="../css-receita/criar_conta.css">
+    <title>Cadastrar conta</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="card">
-            <h2>Criar Conta</h2>
-            <form action="../php/inserir.php" method="POST">
-                <div class="input-group">
-                    <label for="username">Nome de Usuário</label>
-                    <input type="text" id="Usuario" name="nome" required>
+        <div class="form-image">
+            <img src="ooooooo.jpg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
                 </div>
-                <div class="input-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="input-group">
-                    <label for="Senha">Senha</label>
-                    <input type="password" id="Senha" name="senha" required>
-                </div>
-                <button type="submit" class="btn" action="">Criar Conta</button>
-            </form>
-            <p>Já tem uma conta? <a href="../html-receita/tela_login_.html">Entrar</a></p>
 
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome">Nome de Usuario</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite seu Nome de Usuario" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="confirmaSenha">Confirme sua Senha</label>
+                        <input id="confirmaSenha" type="password" name="confirmaSenha" placeholder="Digite sua senha novamente" required>
+                    </div>
+
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="tela_inicial.html">Entrar</a> </button>
+                </div>
+            </form>
+            <br>
+            <p>Já tem uma conta? <a href="../html-receita/tela_login_.html">Entrar</a></p>
         </div>
     </div>
 </body>
+
 </html>
