@@ -1,36 +1,64 @@
-<h1>
-    Listagem de usuários
-</h1>
-<?php
-$con = new mysqli ("localhost","root", "", "bd_receita");
-$res = $con-> query("select * from bd_receita.usuarios");
-echo"<table border =1 >";
-echo"<thead>";
-echo"<tr>";
-echo"<th> Nome </th>";
-echo"<th> Email </th>";
-echo"<th colspan='2'> Opções </th>";
-echo"</tr>";
-echo"</thead>";
-echo"<tbody>";
-while($obj= $res -> fetch_object()){
-    $id= $obj->id;
-    echo "<tr>";
-    echo"<td>";
-    echo $obj->nome;
-    echo"</td>";
-    echo"<td>";
-    echo  $obj->email;
-    echo"</td>";
-    echo"<td>";
-    echo "<a href='excluir.php?id=$id'> Excluir </a>";
-    echo"</td>";
-    echo"<td>";
-    echo "<a href='editar.php?id=$id'> Editar </a>";
-    echo"</td>";
-    echo"</tr>";
-}
-echo"</tbody>";
-echo "</table>";
-$con ->close();
-?>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/listar.css">
+    <title>Listagem de Usuários</title>
+
+    
+</head>
+
+<body>
+       <table border="1px">
+                <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th colspan = "2">Opções</th>
+                            
+                        </tr>
+
+                </thead>
+                <tbody>
+                    <?php
+
+                    $con = new mysqli ("localhost","root", "", "bd_receita");
+                    $res = $con-> query("select * from bd_receita.usuarios");
+
+                    while($obj= $res -> fetch_object()){
+                        $id= $obj->id;
+                        echo "<tr>";
+                        echo"<td>";
+                        echo $obj->nome;
+                        echo"</td>";
+                        echo"<td>";
+                        echo  $obj->email;
+                        echo"</td>";
+                        echo"<td>";
+                        echo "<a href='excluir.php?id=$id'> Excluir </a>";
+                        echo"</td>";
+                        echo"<td>";
+                        echo "<a href='editar.php?id=$id'> Editar </a>";
+                        echo"</td>";
+                        echo"</tr>";
+                    }
+                    echo"</tbody>";
+                    $con ->close();
+                    ?>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan='2'>
+                        <a href='../html/criar_conta.html'>Cadastrar novo usuário</a>
+                        </th>
+                        <th colspan='2' color=>
+                        <a href='../html/tela_inicial.html'>Ir para o site</a>
+                        </th>
+                    </tr>
+                </tfoot>
+       </table>
+</body>

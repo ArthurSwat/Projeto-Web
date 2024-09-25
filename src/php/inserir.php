@@ -11,8 +11,20 @@ $con-> close();
 
 ?>
 <br>
-
-<h1>
-    Parabéns, o usuário foi inserido!
-</h1>
-    <a href="listar.php">Ver usuários cadastrados</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário Cadastrado</title>
+    <link rel="stylesheet" href="../css/mensagem.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Parabéns, o usuário foi cadastrado!</h2>
+    <p><button><a href="listar.php">Usuários cadastrados</a></button></p>
+    </div>
+    
+   
+</body>
+</html>
