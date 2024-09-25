@@ -28,11 +28,13 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #fde3a7d7;
-    padding: 1rem;
+    padding: 0px;
 }
 
 .form-image img {
-    width: 31rem;
+    width: 10000px;
+    height: 670px;
+    margin: 0px;
 }
 
 .form {
