@@ -25,10 +25,11 @@
                 <tbody>
                     <?php
 
-                    $con = new mysqli ("localhost","root", "", "bd_receita");
-                    $res = $con-> query("select * from bd_receita.usuarios");
-
+                    include("conexao.php");
+                    $res = $con-> query("select * from bd_receita.usuarios"); //fazendo a consulta;
+                    //fetch_object faz com que toda linha vire um objeto, daí, sendo atribuido a variável obj;
                     while($obj= $res -> fetch_object()){
+                        //armazenando o id que foi obtido através da variável obj na variável $id;
                         $id= $obj->id;
                         echo "<tr>";
                         echo"<td>";
