@@ -1,32 +1,78 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mestre Cuca - Receitas</title>
-    <link rel="stylesheet" href="../src/css-receita/tela_principal.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Barra do Topo com a Logo -->
-    <div class="top-bar">
-        <img src="logo.png" alt="Logo Mestre Cuca" class="logo">
-    </div>
-    
-    <div class="second-bar">
-        <!-- A barra está vazia, sem texto -->
-    </div>
-    
-    <!-- Conteúdo Principal -->
-    <div class="container">
-        <h1>As melhores receitas do Mestre Cuca</h1>
 
-        <div class="buttons">
-            <a href="../src/html-receita/tela_login_.html" class="btn signup">Login</a>
-            <a href="../src/html-receita/criar_conta_.html" class="btn login">Criar conta</a>
+<!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Mestre Cuca - Receitas</title>
+     <link rel="stylesheet" href="../src/css-receita/tela_principal.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+ </head>
+ <body>
+     <!-- Barra de navegação -->
+     <header class="navbar">
+         <div class="container">
+             <div class="logo">
+                 <img src="../src/img/logo (2).png" alt="Mestre Cuca Logo">
+             </div>
+             <nav>
+                 <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Receitas</a></li>
+                     <li><a href="#">Sobre</a></li>
+                     <li><a href="#">Contato</a></li>
+                 </ul>
+             </nav>
+             
+         </div>
+     </header>
+ 
+     <!-- Seção principal com banner -->
+     <section class="hero">
+         <div class="hero-content">
+             <h1>Melhores Receitas Do Mestre Cuca</h1>
+             <p>Sabor e Surpresa: Descubra o Inesperado em Cada Prato!</p>
+         
+         <div class="auth-buttons">
+            <a href="../src/html-receita/tela_login.html" class="btn-primary">Entrar</a>
+            <a href="../src/html-receita/criar_conta.html" class="btn-primary">Criar conta</a>
         </div>
     </div>
-</body>
-</html>
-
-
+     </section>
+ 
+     <!-- Seção de Receitas Especiais -->
+     <section class="special-offers">
+         <div class="container">
+             <h2>Principais Receitas</h2>
+             <div class="offer-grid">
+                 <div class="offer-item">
+                     <img src="../src/img/cuscuz-ovovale.webp" alt="Receita 1">
+                     <h3>Cuscuz de milho com ovo pochêr</h3>
+                     <p>Conhece a expressão “café da manhã dos campeões”? É este aqui. Serve também para um brunch com ares regionais e até para um jantar leve.</p>
+                     <a href="#" class="btn-secondary">Ver Mais</a>
+                 </div>
+                 <div class="offer-item">
+                     <img src="../src/img/cuscuz-brocolis.webp" alt="Receita 2">
+                     <h3>Cuscuz de Brócolis</h3>
+                     <p>Passado no processador o brócolis fica com textura de cuscuz marroquino e vira acompanhamento leve e todo cheio de charme </p>
+                     <a href="#" class="btn-secondary">Ver Mais</a>
+                 </div>
+                 <div class="offer-item">
+                     <img src="../src/img/cuscuz.webp" alt="Receita 3">
+                     <h3>Cuscuz Marroquino com legumes a jato.</h3>
+                     <p>Receita tão prática que fica pronta em uma panela só e não precisa nem de faca para comer.</p>
+                     <a href="#" class="btn-secondary">Ver Mais</a>
+                 </div>
+             </div>
+         </div>
+     </section>
+ 
+     <!-- Rodapé -->
+     <footer class="footer">
+         <div class="container">
+             <p>&copy; 2024 OctoFood - Todos os direitos reservados.</p>
+         </div>
+     </footer>
+ </body>
+ </html>
+         

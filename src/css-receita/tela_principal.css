@@ -1,87 +1,207 @@
 @charset "utf-8";
 
-/* Reset e Fonte Padrão */
-html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fffcf7;
-    font-family: 'Montserrat', sans-serif;
-    background-size: cover;
+
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos na largura e altura dos elementos */
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão como 'Poppins' */
 }
 
+
+/* Estilos Gerais */
 body {
-    margin: 0;
-    background: none; /* Remove qualquer fundo adicional do body */
+    background-color: #f8f8f8; /* Define a cor de fundo da página */
+    color: #333; /* Define a cor do texto */
+    line-height: 1.6; /* Ajusta a altura da linha para melhor legibilidade */
 }
 
-/* Barra do Topo */
-.top-bar {
-    background-color: #fffcf7; /* Cor de fundo da barra */
-    padding: 30px 0;
-    text-align: center;
-    position: fixed; /* Fixa a barra no topo */
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Mantém a barra acima do conteúdo */
+
+/* Navbar Barra*/
+.navbar {
+    background-color: #ffffff; /* Cor de fundo branca */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    padding: 25px 0; /* Espaçamento interno em cima e embaixo */
+    position: fixed; /* Fixa a barra de navegação no topo da página */
+    width: 100%; /* Largura total da página */
+    z-index: 1000; /* Garante que a navbar fique acima de outros conteúdos */
+   
 }
 
-.logo {
-    max-width: 120px; /* Ajuste o tamanho da logo conforme necessário */
+
+.navbar .container {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: space-between; /* Espaça os itens igualmente com espaço entre eles */
+    align-items: center; /* Alinha itens verticalmente ao centro */
 }
 
-/* Conteúdo Principal */
-.container {
-    text-align: center;
-    margin-top: 300px; /* Espaço para a barra do topo */
+
+.navbar .logo img {
+    width: 170px; /* Define a largura da logo */
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #4b593f;
+
+.navbar nav {
+    flex-grow: 1; /* Permite que a navegação cresça e ocupe espaço */
+    display: flex;
+    justify-content: center; /* Centraliza a lista */
 }
 
-.buttons {
-    margin-top: 40px;
+
+.navbar nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Exibe itens de lista em linha */
+    gap: 20px; /* Espaçamento entre itens de lista */
+   
 }
 
-.buttons a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 8px 30px;
-    margin: 20px; /* Distância entre os botões */
-    border-radius: 20px;
+
+.navbar nav ul li {
+    display: inline; /* Exibe itens como linha única */
 }
 
-.buttons .signup {
-    background-color: #617634;
+
+.navbar nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #333; /* Cor do texto dos links */
+    font-weight: 600; /* Define o peso da fonte para negrito */
+    padding: 10px; /* Espaçamento interno dos links */
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
 }
 
-.buttons .login {
-    background-color: #617634;
+
+.navbar nav ul li a:hover {
+    color: #ff7f50; /* Cor do texto dos links ao passar o mouse */
 }
 
-/* Efeito Hover */
-.btn.signup:hover {
-    background-color: #d4d4d4;
-    color: #617634;
+
+
+/* Hero Section */
+.hero {
+    background-image: url('../img/aos.png'); /* Define a imagem de fundo da seção hero */
+    background-size: cover; /* Faz a imagem cobrir toda a área da seção */
+    background-position: center; /* Centraliza a imagem */
+    height: 90vh; /* Define a altura da seção como 90% da altura da viewport */
+    display: flex; /* Usa flexbox para layout */
+    justify-content: left;
+    padding-left: 50px;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    text-align: left; /* Alinha o texto ao centro */
+    color: #0e0e0e; /* Define a cor do texto como branco */
 }
 
-.btn.login:hover {
-    background-color: #d4d4d4;
-    color: #617634;
+
+.hero-content h1 {
+    font-size: 230%; /* Define o tamanho da fonte do título principal */
+    font-weight: 600; /* Define o peso da fonte como negrito */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
 }
 
-/* Barra 2 */
-.second-bar {
-    background-color: #de7229; /* Cor de fundo da barra 2*/
-    padding: 50px 0;
-    margin-top: 40px; /* Espaço adicional abaixo do conteúdo principal */
+
+.hero-content p {
+    font-size: 1.2rem; /* Define o tamanho da fonte do parágrafo */
+    margin-bottom: 50px; /* Espaçamento abaixo do parágrafo */
 }
 
-.bottom-bar p {
-    font-size: 18px; /* Ajuste o tamanho do texto conforme necessário */
-    color: #333;
+
+.hero-content .btn-primary {
+    background-color: #0f0f0e; /* Cor de fundo do botão principal */
+    color: #fff; /* Cor do texto do botão */
+    padding: 15px 30px; /* Espaçamento interno do botão */
+    text-decoration: none; /* Remove o sublinhado do botão */
+    font-size: 1.1rem; /* Define o tamanho da fonte do botão */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    border-radius: 8px; /* Bordas arredondadas do botão */
+    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor de fundo */
+}
+
+
+.hero-content .btn-primary:hover {
+    background-color: #313131; /* Cor de fundo do botão ao passar o mouse */
+}
+
+
+/* Seção de Ofertas Especiais */
+.special-offers {
+    padding: 50px 0; /* Espaçamento interno em cima e embaixo */
+    background-color: #fff; /* Cor de fundo branca */
+}
+
+
+.special-offers .container {
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+
+.special-offers h2 {
+    font-size: 2rem; /* Define o tamanho da fonte do título secundário */
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
+    color: #333; /* Cor do texto do título */
+}
+
+
+.offer-grid {
+    display: flex; /* Usa flexbox para layout */
+    gap: 20px; /* Espaçamento entre itens */
+    justify-content: space-between; /* Espaça os itens igualmente com espaço entre eles */
+}
+
+
+.offer-item {
+    background-color: #f8f8f8; /* Cor de fundo dos itens de oferta */
+    padding: 20px; /* Espaçamento interno dos itens */
+    border-radius: 10px; /* Bordas arredondadas dos itens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil aos itens */
+    text-align: center; /* Alinha o texto ao centro */
+    flex: 1; /* Permite que os itens se expandam igualmente */
+}
+
+
+.offer-item img {
+    width: 100%; /* Define a largura da imagem como 100% do contêiner */
+    height: 200px; /* Define a altura da imagem */
+    object-fit: cover; /* Faz a imagem cobrir o contêiner sem distorção */
+    border-radius: 10px; /* Bordas arredondadas da imagem */
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+}
+
+
+.offer-item h3 {
+    font-size: 1.5rem; /* Define o tamanho da fonte do título da oferta */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    color: #333; /* Cor do texto do título */
+}
+
+
+.offer-item p {
+    color: #666; /* Cor do texto da descrição */
+    margin-bottom: 15px; /* Espaçamento abaixo da descrição */
+}
+
+
+.offer-item .btn-secondary {
+    background-color: #0f0f0f; /* Cor de fundo do botão secundário */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    text-decoration: none; /* Remove o sublinhado do botão */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+}
+
+
+.offer-item .btn-secondary:hover {
+    background-color: #ff5722; /* Cor de fundo do botão ao passar o mouse */
+}
+
+
+/* Rodapé */
+.footer {
+    background-color:#e66a00;  /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+    padding: 20px 0; /* Espaçamento interno em cima e embaixo */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+
+.footer p {
+    margin: 0; /* Remove margens do parágrafo no rodapé */
 }
