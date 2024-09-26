@@ -1,6 +1,5 @@
 <meta charset="UTF-8">
 
-
 <?php
 $id =$_GET["id"];
 include("conexao.php");
@@ -12,36 +11,7 @@ if($obj= $res->fetch_object()){
 }
 $con -> close();
 ?>
-<!--<form  method="post" action="alterar.php" >
-    
-    <label >
-            ID do usuário:
-            <br>
-            <input type="text" name="id" value="<?php echo $id; ?>">
-        </label>
-        <br>
-        <label for="">
-            Nome do usuário:
-            <br>
-            <input type="text" name="nome" value="<?php echo $nome; ?>">
-        </label>
-        <br>
-        <label for="">
-            Email do usuário:
-            <br>
-            <input type="text" name="email" value="<?php echo $email; ?>">
-        </label>
-        <br>
-        <label for="">
-            Senha do usuário:
-            <br>
-            <input type="text" name="senha" value="<?php echo $senha; ?>">
-        </label>
-        <br>
-        <button>
-            Editar
-        </button>
-</form>-->
+<br>
 <!DOCTYPE html>
 <html lang="pt-br">
 

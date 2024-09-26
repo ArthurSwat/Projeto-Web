@@ -49,9 +49,9 @@ text-decoration: none; /*remove sublinhado*/
 
 a:hover
 {
-text-decoration: underline; /*adiciona sublinhado ao interagir com o mouse*/
+text-decoration: underline; /*adiciona um sublinhado ao passar mouse*/
 }
-tfoot a{
+tfoot a{ 
     color: whitesmoke;
 }
 

@@ -4,7 +4,7 @@ $email= $_POST["email"];
 $senha= md5($_POST["senha"]);
 
 include("conexao.php");
-$con-> query("insert into bd_receita.usuarios (nome, email, senha) values ('$nome', '$email', '$senha')");
+$con-> query("insert into bd_receita.usuarios (nome, email, senha, data_registro) values ('$nome', '$email', '$senha', now())");
 
 
 $con-> close();
