@@ -55,7 +55,7 @@
                         <th colspan='2'>
                         <a href='../html/criar_conta.html'>Cadastrar novo usuário</a>
                         </th>
-                        <th colspan='2' color=>
+                        <th colspan='2'>
                         <a href='../html/tela_inicial.html'>Ir para o site</a>
                         </th>
                     </tr>
