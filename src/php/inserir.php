@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+   <!-- <style>
         body{
  
 }
@@ -27,21 +27,23 @@ h1{
     margin:30px;
 }
     </style>
+    <link rel="stylesheet" href="../css/mensagem.css">
 </head>
 <body>
-<div class= "container">
+
     
-    <div class="op">
+    <div class="card">
         <h1>
             Parabéns, o usuário foi inserido!
         </h1>
         <br>
-            <a href="listar.php">Ver usuários cadastrados</a>
+            <p><button><a href="listar.php">Usuários cadastrados</a></button></p>
     </div>
-</div>
+
 </body>
 </html>
-<br>
+<br>-->
+
 
 
 <?php
@@ -50,34 +52,25 @@ $email= $_POST["email"];
 $senha= md5($_POST["senha"]);
 
 include("conexao.php");
-<<<<<<< HEAD
-$con-> query("insert into bd_receita.usuarios (nome, email, senha, data_registro) values ('$nome', '$email', '$senha', now()");
-=======
-$con-> query("insert into bd_receita.usuarios (nome, email, senha, data_registro) values ('$nome', '$email', '$senha', now())");
->>>>>>> 361624e255a6955a9bd464cc2cd815b831f3a7cc
+$con-> query("insert into bd_receita.usuarios (nome, email, senha, data_registro) values ('$nome', '$email', '$senha','now()')");
 
 
 $con-> close();
 
 ?>
-<<<<<<< HEAD
-=======
-<br>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuário Cadastrado</title>
+    <title>Excluir Usuário</title>
     <link rel="stylesheet" href="../css/mensagem.css">
 </head>
 <body>
     <div class="card">
-        <h2>Parabéns, o usuário foi cadastrado!</h2>
+        <h2>Usuário inserido com sucesso!</h2>
     <p><button><a href="listar.php">Usuários cadastrados</a></button></p>
     </div>
     
    
 </body>
 </html>
->>>>>>> 361624e255a6955a9bd464cc2cd815b831f3a7cc
