@@ -26,7 +26,7 @@ $con -> close();
 <body>
     <div class="container">
         <div class="form-image">
-            <img src="" alt="">
+        <img src="../img/prato de ovo.avif" alt="">
         </div>
         <div class="form">
             <form action="../php/alterar.php" method="post">
