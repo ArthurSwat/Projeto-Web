@@ -28,12 +28,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD:src/css-receita/criar_conta.css
     background-color: #0d0d0dd7;
     padding: 1rem;
 }
 
 .form-image img {
     width: 30rem;
+=======
+    background-color: #fde3a7d7;
+    padding: 0px;
+}
+
+.form-image img {
+    width: 10000px;
+    height: 670px;
+    margin: 0px;
+>>>>>>> 361624e255a6955a9bd464cc2cd815b831f3a7cc:src/css/criar_conta.css
 }
 
 .form {
