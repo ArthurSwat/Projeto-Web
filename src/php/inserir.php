@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <!-- <style>
+    <style>
         body{
  
 }
@@ -53,7 +53,7 @@ $senha= md5($_POST["senha"]);
 
 include("conexao.php");
 
-$con-> query("insert into bd_receita.usuarios (nome, email, senha, data_registro) values ('$nome', '$email', '$senha','now()')");
+$con-> query("insert into bd_receita.usuarios (nome, email, senha, data_registro) values ('$nome', '$email', '$senha',now())");
 
 $con-> close();
 
