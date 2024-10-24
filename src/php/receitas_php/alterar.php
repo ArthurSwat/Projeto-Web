@@ -5,7 +5,7 @@ $nome = $_POST["nome"];
 $senha= $_POST["senha"];
 
 include("conexao.php");
- $con-> query("update bd_receita.usuarios set nome= '$nome' , senha= '$senha' where id=$id");
+ $con-> query("update bd_receita.receitas set titulo= '$titulo' , descricao= '$descrição' where id=$id");
 
  $con->close();
 
