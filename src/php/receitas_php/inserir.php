@@ -64,13 +64,13 @@ $con-> close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excluir Usuário</title>
+    <title>Excluir Receita</title>
     <link rel="stylesheet" href="../css/mensagem.css">
 </head>
 <body>
     <div class="card">
-        <h2>Usuário inserido com sucesso!</h2>
-    <p><button><a href="listar.php">Usuários cadastrados</a></button></p>
+        <h2>Receita inserida com sucesso!</h2>
+    <p><button><a href="listar.php">Receitas cadastradas</a></button></p>
     </div>
     
    
