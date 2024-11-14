@@ -22,6 +22,7 @@ $con -> close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/criar_conta.css">
     <title>Cadastrar receita</title>
+    link
 </head>
 
 <body>

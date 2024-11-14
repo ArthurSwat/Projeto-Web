@@ -7,7 +7,7 @@ $instrucoes= $_POST["preparo"];
 
 
 include("conexao.php");
- $con-> query("update bd_receita.receitas set titulo= '$titulo' , descricao= '$descrição', ingredientes ='$ingredientes', preparo='$instrucoes' where id=$id");
+ $con-> query("update bd_receita.receitas set titulo= '$titulo' , descricao= '$descricao', ingredientes ='$ingredientes', instrucoes='$instrucoes' where id=$id");
 
  $con->close();
 
