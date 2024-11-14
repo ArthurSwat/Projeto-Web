@@ -13,12 +13,12 @@ $con -> close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excluir Categoria</title>
-    <link rel="stylesheet" href="../../css/mensagem.css">
+    <link rel="stylesheet" href="../../css/aviso.css">
 </head>
 <body>
     <div class="card">
         <h2>Categoria excluída com sucesso!</h2>
-    <p><button><a href="../categoria_php/listar.php">Listagem de Categorias</a></button></p>
+    <p><a href="../categoria_php/listar.php">Listagem de Categorias</a></p>
     </div>
     
    

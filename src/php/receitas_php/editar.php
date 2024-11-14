@@ -60,7 +60,7 @@ $con -> close();
                 </div>
 
                 <div class="continue-button">
-                    <button><a href="listar.php">Confirmar</a> </button>
+                    <button type="submit">Confirmar</button>
                 </div>
             </form>
         </div>

@@ -14,14 +14,12 @@ $con-> close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inserir Categoria</title>
-    <link rel="stylesheet" href="../../css/mensagem.css">
+    <link rel="stylesheet" href="../../css/aviso.css">
 </head>
 <body>
     <div class="card">
         <h2>Categoria inserida com sucesso!</h2>
-    <p><button><a href="listar.php">Categorias Cadastradas</a></button></p>
-    </div>
-    
-   
+    <p><a href="listar.php">Listagem de Categorias</a><p>
+    </div> 
 </body>
 </html>

@@ -21,23 +21,24 @@ body{
     border-radius: 10px;
     border-right: 20px;
 }
-
-body button {
-    background-color: #f2ce63;
-    padding: 12px 34px;
-    margin-left: 136px;
-    margin-top: 28px; /*distância do botão para o texto*/
-    border-radius: 20px;
-    border-style: none;
+body p{
+    padding-left: 30%;
+    padding-top: 30px;
+    appearance: button ;
 }
-body button a{
+body a{
+    padding: 10px;
+    appearance: button;
+    border-radius: 20px;
+    background: #f4c22c;
     font-size: 15px;
     text-decoration: none;
     color:white;
 }
 a:hover
 {
-    color: #4b593f;
+    color: #f4c22c;
+    background-color: white;
     text-decoration: underline; /*adiciona sublinhado ao interagir com o mouse*/
 }
 body h2{

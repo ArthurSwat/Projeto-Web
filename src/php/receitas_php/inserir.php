@@ -65,12 +65,12 @@ $con-> close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excluir Receita</title>
-    <link rel="stylesheet" href="../css/mensagem.css">
+    <link rel="stylesheet" href="../css/aviso.css">
 </head>
 <body>
     <div class="card">
         <h2>Receita inserida com sucesso!</h2>
-    <p><button><a href="listar.php">Receitas cadastradas</a></button></p>
+    <p><a href="listar.php">Receitas cadastradas</a></p>
     </div>
     
    
