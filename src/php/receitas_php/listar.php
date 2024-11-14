@@ -74,10 +74,10 @@
                 <tfoot>
                     <tr>
                         <th colspan='2'>
-                        <a href='../html/criar_conta.html'>Cadastrar nova receita</a>
+                        <a href='adicionar_receita.php'>Cadastrar nova receita</a>
                         </th>
                         <th colspan='2'>
-                        <a href='../html/tela_inicial.html'>Ir para tela principal</a>
+                        <a href='../../index.html'>Ir para tela principal</a>
                         </th>
                     </tr>
                 </tfoot>

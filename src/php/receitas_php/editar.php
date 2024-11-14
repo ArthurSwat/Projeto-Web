@@ -3,11 +3,12 @@
 <?php
 $id =$_GET["id"];
 include("conexao.php");
-$res = $con-> query("select * from bd_receita.usuarios where id=$id");
+$res = $con-> query("select * from bd_receita.receitas where id=$id");
 if($obj= $res->fetch_object()){
-    $nome=$obj->nome;
-    $email=$obj->email;
-    $senha=$obj->senha;
+    $titulo=$obj->titulo;
+    $descricao=$obj->descricao;
+    $ingredientes=$obj->ingredientes;
+    $instrucoes=$obj->instrucoes;
 }
 $con -> close();
 ?>
@@ -20,7 +21,7 @@ $con -> close();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/criar_conta.css">
-    <title>Cadastrar conta</title>
+    <title>Cadastrar receita</title>
 </head>
 
 <body>
@@ -29,10 +30,10 @@ $con -> close();
         <img src="../img/prato de ovo.avif" alt="">
         </div>
         <div class="form">
-            <form action="../php/alterar.php" method="post">
+            <form action="../receitas_php/alterar.php" method="post">
                 <div class="form-header">
                     <div class="title">
-                        <h1>Editar usuário</h1>
+                        <h1>Editar receita</h1>
                     </div>
                 </div>
                 <div class="input-box">
@@ -40,23 +41,25 @@ $con -> close();
                     </div>
                 <div class="input-group">
                     <div class="input-box">
-                        <label for="nome">Nome de Usuario</label>
-                        <input id="nome" type="text" name="nome" placeholder="Digite seu Nome de Usuario"  value="<?php echo $nome; ?>" required>
+                        <label for="text">Titulo</label>
+                        <input id="nome" type="text" name="titulo"   value="<?php echo $titulo; ?>" required>
                     </div>
-
                     <div class="input-box">
-                        <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail"  value="<?php echo $email; ?>" required>
+                        <label for="text">Ingrediente</label>
+                        <input id="password" type="password" name="ingredientes" placeholder="Digite sua senha"   value="<?php echo $ingredientes; ?>"required>
                     </div>
-
                     <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="senha" placeholder="Digite sua senha"   value="<?php echo $senha; ?>"required>
+                        <label for="text">Modo de preparo</label>
+                        <input id="n" type="text" name="preparo" placeholder="Digite seu Nome de Usuario"  value="<?php echo $instrucoes; ?>" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="text">Sinopse</label>
+                        <input id="nome" type="text" name="sinopse" placeholder="Digite seu Nome de Usuario"  value="<?php echo $descricao; ?>" required>
                     </div>
                 </div>
 
                 <div class="continue-button">
-                    <button><a href="../php/listar.php">Confirmar</a> </button>
+                    <button><a href="listar.php">Confirmar</a> </button>
                 </div>
             </form>
         </div>
