@@ -55,7 +55,7 @@ $categoria= $_POST ["categoria"];
 $usuario=1;
 include("conexao.php");
 
-$con-> query("insert into receitas ( titulo, descricao, ingredientes, instrucoes, data_publicacao,usuarios, categorias) values ('$titulo', '$descricao','$ingredientes','$instrucoes',now(),$usuario, $categoria)");
+$con-> query("insert into receitas ( titulo, descricao, ingredientes, instrucoes, data_publicacao,usuario, categoria) values ('$titulo', '$descricao','$ingredientes','$instrucoes',now(),$usuario, $categoria)");
 
 $con-> close();
 

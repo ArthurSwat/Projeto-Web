@@ -31,7 +31,7 @@
                     <?php
 
                     include("conexao.php");
-                    $res = $con-> query("select * from bd_receita.receitas"); //fazendo a consulta;
+                    $res = $con-> query("SELECT r.*, c.nome as nome_categoria FROM bd_receita.receitas as r inner join categorias as c on r.categoria= c.id"); //fazendo a consulta;
                     //fetch_object faz com que toda linha vire um objeto, daí, sendo atribuido a variável obj;
                     while($obj= $res -> fetch_object()){
                         //armazenando o id que foi obtido através da variável obj na variável $id;
@@ -53,10 +53,10 @@
                         echo $obj -> data_publicacao;
                         echo"</td>";
                         echo "<td>";
-                        echo $obj -> usuarios;
+                        echo $obj -> usuario;
                         echo"</td>";
                         echo "<td>";
-                        echo $obj -> categorias;
+                        echo $obj -> nome_categoria;
                         echo"</td>";
                         echo"<td>";
                         echo "<a href='excluir.php?id=$id'> Excluir </a>";
