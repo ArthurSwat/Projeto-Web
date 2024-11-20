@@ -12,12 +12,12 @@ $con -> close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excluir Usuário</title>
-    <link rel="stylesheet" href="../css/aviso.css">
+    <link rel="stylesheet" href="../../css/aviso.css">
 </head>
 <body>
     <div class="card">
-        <h2>Usuário excluído com sucesso!</h2>
-    <p><a href="listar.php">Usuários cadastrados</a></p>
+        <h2>Receita excluída com sucesso!</h2>
+    <p><a href="listar.php">Receitas cadastradas</a></p>
     </div>
     
    

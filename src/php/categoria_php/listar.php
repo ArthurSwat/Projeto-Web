@@ -57,7 +57,7 @@
                         <a href='../../html/criar_categoria.html'>Cadastrar nova Categoria</a>
                         </th>
                         <th colspan='2'>
-                        <a href='../html/tela_inicial.html'>Ir para o site</a>
+                        <a href='../../index.html'>Ir para o site</a>
                         </th>
                     </tr>
                 </tfoot>
