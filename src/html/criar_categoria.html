@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/criar_conta.css">
+    <link rel="stylesheet" href="../css/css_criar_categoria.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>Cadastrar Categoria</title>
 </head>
@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="form-image">
-            <img src="../img/prato de ovo.avif" alt="">
+            <img src="../img/comida2.jpg" alt="">
         </div>
         <div class="form">
             <form action="../php/categoria_php/inserir.php" method="post">
@@ -29,10 +29,9 @@
                         <input id="nome" type="text" name="nome" placeholder="Digite o nome da categoria" required>
                     </div>
                     <br>
-                    <br>
                     <div class="input-box">
                         <label for="descricao">Descrição</label>
-                        <input id="descricao" type="text" name="descricao" placeholder="Digite a descrição" required>
+                        <textarea id="descricao" name="descricao" class="descricao-campo" placeholder="Digite a descrição" required></textarea>
                     </div>
                 </div>
 
