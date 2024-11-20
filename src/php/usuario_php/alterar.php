@@ -22,8 +22,8 @@ include("conexao.php");
 </head>
 <body>
     <div class="card">
-        <h2>Usuario Editada com Sucesso!</h2>
-    <p><a href="listar.php">Categorias Cadastradas</a></p>
+        <h2>Usuário editado com sucesso!</h2>
+    <p><a href="listar.php">Usuários Cadastrados</a></p>
     </div>
     
    
