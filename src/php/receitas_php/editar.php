@@ -73,7 +73,7 @@ $con -> close();
                     
                     <div class="input-box">
                         <label for="text">Ingrediente</label>
-                        <input id="password" type="text" name="ingredientes" placeholder="Digite sua senha"   value="<?php echo $ingredientes; ?>"required>
+                        <input id="password" type="text" name="ingredientes" placeholder="Digite os ingredientes"   value="<?php echo $ingredientes; ?>"required>
                     </div>
                     <div class="input-box">
                         <label for="text">Modo de preparo</label>
