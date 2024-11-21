@@ -117,6 +117,49 @@ body {
 .continue-button button:hover {
     background-color: #d65f00;
 }
+.campo {
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.campo select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    appearance: none; /* Remove a seta padrão para estilizar */
+    cursor: pointer;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+}
+
+.campo select:hover {
+    background-color: #f9f9f9;
+}
+
+.campo select:focus {
+    outline: 2px solid #e66a00;
+    background-color: #fff;
+}
+
+.campo option {
+    color: #333;
+    font-size: 1rem;
+    background-color: #fff;
+}
 
 @media screen and (max-width: 1330px) {
     .container {

@@ -9,6 +9,7 @@ if($obj= $res->fetch_object()){
     $descricao=$obj->descricao;
     $ingredientes=$obj->ingredientes;
     $instrucoes=$obj->instrucoes;
+    $categoria=$obj->categoria;
 }
 $con -> close();
 ?>
@@ -22,7 +23,7 @@ $con -> close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/editar_receita.css">
     <title>Cadastrar receita</title>
-    link
+    
 </head>
 
 <body>
@@ -45,9 +46,34 @@ $con -> close();
                         <label for="text">Titulo</label>
                         <input id="nome" type="text" name="titulo"   value="<?php echo $titulo; ?>" required>
                     </div>
+                    <div class="campo">
+                <label for="categoria">Categoria</label>
+                <select name="categoria" id="" style="width: auto;">
+                    
+                    <?php
+                      $con = new mysqli ("localhost","root", "", "bd_receita");
+                     $res = $con ->query("select * from categorias");
+
+                     while ($linha = $res -> fetch_object()){
+                        $id = $linha->id;
+                        $nome = $linha->nome;
+                            if ($id == $categoria){
+                                echo "<option value='$id' selected> $nome </option>";
+                            }
+                            else{
+                                echo "<option value='$id'> $nome </option>";
+                             }
+                      
+                     }
+                     
+                    
+                ?>
+                </select>
+            </div>
+                    
                     <div class="input-box">
                         <label for="text">Ingrediente</label>
-                        <input id="password" type="password" name="ingredientes" placeholder="Digite sua senha"   value="<?php echo $ingredientes; ?>"required>
+                        <input id="password" type="text" name="ingredientes" placeholder="Digite sua senha"   value="<?php echo $ingredientes; ?>"required>
                     </div>
                     <div class="input-box">
                         <label for="text">Modo de preparo</label>

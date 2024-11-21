@@ -43,11 +43,11 @@
                 <label for="preparo">
                     Modo de preparo
                 </label>
-                <textarea name="igredientes" id="instructions"></textarea>
+                <textarea name="preparo" id="instructions"></textarea>
             </div>
             <div class="form-grupo">
                 <label for="sinopse">Sinopse:</label>
-                <textarea id="instructions" name="instrucoes" rows="5" required></textarea>
+                <textarea id="instructions" name="sinopse" rows="5" required></textarea>
             </div>
             <button type="submit">Adicionar Receita</button>
         </form>

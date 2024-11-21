@@ -48,9 +48,9 @@ h1{
 
 <?php
 $titulo = $_POST["titulo"];
-$ingredientes= $_POST["ingredientes"];
+$ingredientes=$_POST["ingredientes"];
 $instrucoes=$_POST["preparo"];
-$descricao =$_POST["sinopse"];
+$descricao=$_POST["sinopse"];
 $categoria= $_POST ["categoria"];
 $usuario=1;
 include("conexao.php");

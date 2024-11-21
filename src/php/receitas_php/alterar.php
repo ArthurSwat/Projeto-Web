@@ -4,10 +4,11 @@ $titulo= $_POST["titulo"];
 $descricao= $_POST["sinopse"];
 $ingredientes= $_POST["ingredientes"];
 $instrucoes= $_POST["preparo"];
+$categoria= $_POST["categoria"];
 
 
 include("conexao.php");
- $con-> query("update bd_receita.receitas set titulo= '$titulo' , descricao= '$descricao', ingredientes ='$ingredientes', instrucoes='$instrucoes' where id=$id");
+ $con-> query("update bd_receita.receitas set titulo= '$titulo' , descricao= '$descricao', ingredientes ='$ingredientes', instrucoes='$instrucoes', categoria ='$categoria' where id=$id");
 
  $con->close();
 
