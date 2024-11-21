@@ -22,8 +22,8 @@
                     <?php
                       $con = new mysqli ("localhost","root", "", "bd_receita");
                      $res = $con ->query("select * from categorias");
-
-                     while ($linha = $res -> fetch_object()){
+                        $obj=$res;
+                     while ($linha = $obj -> fetch_object()){
                         $id = $linha->id;
                         $nome = $linha->nome;
 

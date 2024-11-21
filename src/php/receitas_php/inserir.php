@@ -52,7 +52,7 @@ $ingredientes=$_POST["ingredientes"];
 $instrucoes=$_POST["preparo"];
 $descricao=$_POST["sinopse"];
 $categoria= $_POST ["categoria"];
-$usuario=1;
+$usuario=2;
 include("conexao.php");
 
 $con-> query("insert into receitas ( titulo, descricao, ingredientes, instrucoes, data_publicacao,usuario, categoria) values ('$titulo', '$descricao','$ingredientes','$instrucoes',now(),$usuario, $categoria)");

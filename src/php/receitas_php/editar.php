@@ -77,11 +77,11 @@ $con -> close();
                     </div>
                     <div class="input-box">
                         <label for="text">Modo de preparo</label>
-                        <input id="n" type="text" name="preparo" placeholder="Digite seu Nome de Usuario"  value="<?php echo $instrucoes; ?>" required>
+                        <input id="n" type="text" name="preparo" placeholder="Digite o preparo " value="<?php echo $instrucoes; ?>" required>
                     </div>
                     <div class="input-box">
                         <label for="text">Sinopse</label>
-                        <input id="nome" type="text" name="sinopse" placeholder="Digite seu Nome de Usuario"  value="<?php echo $descricao; ?>" required>
+                        <input id="nome" type="text" name="sinopse" placeholder="Digite a sinopse"  value="<?php echo $descricao; ?>" required>
                     </div>
                 </div>
 
