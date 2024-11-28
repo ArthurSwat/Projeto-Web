@@ -1,0 +1,245 @@
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global do body */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Barra de navegação */
+header {
+    width: 100%;
+    background-color: #de7229; /* Cor sólida, sem bordas ou sombras */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    font-size: 1.1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ffb74d;
+}
+
+/* Seção principal com banner */
+.main {
+    background-color: #fffcf7;
+    padding: 50px 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    color: #de7229;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Seção de Receitas Especiais */
+.featured-recipes {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.featured-recipes h2 {
+    font-size: 2.5em;
+    color: #de7229;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.recipe-content {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.recipe-content h2 {
+    font-size: 2em;
+    color: #de7229;
+    margin-bottom: 15px;
+}
+
+.recipe-content h3 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.recipe-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.recipe-content strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.recipe-content ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.recipe-content ul li {
+    margin-bottom: 10px;
+}
+
+/* Botão "Ver Mais" */
+.recipe-content a.btn {
+    display: inline-block;
+    background-color: #617634;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recipe-content a.btn:hover {
+    background-color: #ef8a4c;
+}
+
+/* Rodapé */
+footer {
+    background-color: #e66a00;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .main {
+        padding: 30px 20px;
+    }
+
+    .recipe-container {
+        gap: 30px;
+    }
+
+    .recipe-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .hero-content h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+
+    .recipe-content h2 {
+        font-size: 1.8em;
+    }
+
+    .recipe-content p {
+        font-size: 1em;
+    }
+
+    .recipe-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .recipe-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    .hero-content h2 {
+        font-size: 1.6em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .recipe-content h2 {
+        font-size: 1.6em;
+    }
+
+    .recipe-content p {
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
