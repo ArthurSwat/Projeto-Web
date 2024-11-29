@@ -1,8 +1,10 @@
 <?php
 $id =$_GET["id"];
 
+
                       $con = new mysqli ("localhost","root", "", "bd_receita");
                      $res = $con ->query("select * from receitas where id = $id");
+
 
                      if ($obj = $res->fetch_object()){
                         $id = $obj->id;
@@ -11,8 +13,9 @@ $id =$_GET["id"];
                         $ingredientes = $obj->ingredientes;
                         $instrucoes = $obj->instrucoes;  
                     }
-                    
+                   
                 ?>
+
 
 <html lang="pt-BR">
 <head>
@@ -23,6 +26,7 @@ $id =$_GET["id"];
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
 
     <!-- Barra de navegação -->
     <header>
@@ -39,6 +43,7 @@ $id =$_GET["id"];
         </div>
     </header>
 
+
     <!-- Seção principal com banner -->
     <section class="main">
         <div class="container">
@@ -49,32 +54,37 @@ $id =$_GET["id"];
         </div>
     </section>
 
+
     <!-- Seção de Receitas Especiais -->
     <section class="featured-recipes">
         <div class="container">
             <h2><?=$titulo?></h2>
             <div class="recipe-container">
            
-                
+               
                 <div class="recipe-content">
                 <h3>Descrição da receita</h3>
                 <p> <?=$descricao?></p>
 
-                    
+
+                   
                     <h3>Ingredientes para o cuscuz:</h3>
                     <p>
                         <?=nl2br($ingredientes)?>
-                    
+                   
                     </p>
+
 
                     <h3>Modo de Preparo</h3>
 
+
                     <p><?=nl2br($instrucoes)?></p>
-                    
+                   
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Rodapé -->
     <footer>
@@ -83,6 +93,6 @@ $id =$_GET["id"];
         </div>
     </footer>
 
+
 </body>
 </html>        
-   
