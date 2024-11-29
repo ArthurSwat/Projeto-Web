@@ -51,7 +51,7 @@
                 <tfoot>
                     <tr>
                         <th colspan='2'>
-                        <a href='../../html/criar_categoria.html'>Cadastrar nova Categoria</a>
+                        <a href='adicionar_receita.php'>Cadastrar nova receita</a>
                         </th>
                         <th colspan='2'>
                         <a href='../../index.html'>Ir para o site</a>

@@ -1,0 +1,85 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fffaf3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contêiner principal */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #d85e24;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+header h2 {
+    color: #555;
+    font-size: 1.2rem;
+    margin: 5px 0 20px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #d85e24;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Ingredientes com estilo especial */
+.ingredientes p {
+    background-color: #fffaf3;
+    border: 1px solid #f3e5d8;
+    padding: 10px;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    section h3 {
+        font-size: 1.3rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+}
