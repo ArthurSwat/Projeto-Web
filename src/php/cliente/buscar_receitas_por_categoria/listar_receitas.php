@@ -44,7 +44,7 @@
                         echo  $obj->descricao;
                         echo"</td>";
                         echo"<td>";
-                        echo "<a href='detalhes.php?id=" . $obj->id . "'>Detalhe</a>";
+                        echo "<a href='listar_receitas_por_categoria.php?id_categoria=" . $obj->id . "'>Detalhe</a>";
                         echo"</td>";
                         echo"</tr>";
                     }

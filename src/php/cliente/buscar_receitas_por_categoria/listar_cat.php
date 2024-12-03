@@ -130,7 +130,7 @@
                     echo "<div class='category-item'>";
                     echo "<h2>" . htmlspecialchars($obj->nome) . "</h2>";
                     echo "<p>" . htmlspecialchars($obj->descricao) . "</p>";
-                    echo "<a href='../receitas_php/listar_receitas.php?id_categoria=" . htmlspecialchars($obj->id) . "'> Ver receitas </a>";
+                    echo "<a href='listar_receitas.php?id_categoria=" . htmlspecialchars($obj->id) . "'> Ver receitas </a>";
                     echo "</div>";
                 }
             } else {

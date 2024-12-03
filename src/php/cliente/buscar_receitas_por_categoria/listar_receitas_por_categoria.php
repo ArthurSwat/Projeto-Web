@@ -1,5 +1,5 @@
 <?php
-$id =$_GET["id"];
+$id =$_GET["id_categoria"];
 
 
                       $con = new mysqli ("localhost","root", "", "bd_receita");
@@ -24,6 +24,7 @@ $id =$_GET["id"];
     <title>Mestre Cuca - Receitas</title>
     <link rel="stylesheet" href="../../css/detalhes.css"> <!-- Atualize o caminho do CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/css_listar_receitas_cat.css">
 </head>
 <body>
 
