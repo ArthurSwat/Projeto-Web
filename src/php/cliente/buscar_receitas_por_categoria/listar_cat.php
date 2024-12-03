@@ -32,7 +32,7 @@
             font-size: 36px;
         }
         nav {
-            background-color:#fffcf7;
+            background-color:white;
             padding: 10px 0;
             text-align: center;
         }
@@ -108,13 +108,7 @@
         <h1>Mestre Cuca</h1>
         <p>Encontre as melhores receitas para o seu dia a dia!</p>
         </header>
- <nav>
-        <a href="#italiana">Italiana</a>
-        <a href="#brasileira">Brasileira</a>
-        <a href="#sobremesas">Sobremesas</a>
-        <a href="#vegetariana">Vegetariana</a>
-        <a href="#rapida">Rápidas</a>
-    </nav>
+    
  
 
     <!-- Conteúdo Principal -->

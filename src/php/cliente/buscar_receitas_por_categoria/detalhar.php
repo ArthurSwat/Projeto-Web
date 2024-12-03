@@ -69,7 +69,7 @@ $id =$_GET["id_categoria"];
 
 
                    
-                    <h3>Ingredientes para o cuscuz:</h3>
+                    <h3>Ingredientes:</h3>
                     <p>
                         <?=nl2br($ingredientes)?>
                    
