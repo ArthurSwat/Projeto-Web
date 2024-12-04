@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/listar_receitas.css">
+    <link rel="stylesheet" href="../../../css/listar_receitas.css">
     <title>Receitas Cadastradas</title>
 
     
@@ -77,7 +77,7 @@
                         <a href='adicionar_receita.php'>Cadastrar nova receita</a>
                         </th>
                         <th colspan='5'>
-                        <a href='../../index.html'>Ir para tela principal</a>
+                        <a href='../../../index.html'>Ir para tela principal</a>
                         </th>
                     </tr>
                 </tfoot>

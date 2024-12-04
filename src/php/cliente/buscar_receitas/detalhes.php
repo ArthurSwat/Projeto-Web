@@ -19,7 +19,7 @@ $id =$_GET["id"];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mestre Cuca - Receitas</title>
-    <link rel="stylesheet" href="../../css/detalhes.css"> <!-- Atualize o caminho do CSS -->
+    <link rel="stylesheet" href="../../../css/detalhes.css"> <!-- Atualize o caminho do CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -32,8 +32,8 @@ $id =$_GET["id"];
             </div>
             <nav>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../php/receitas_php/adicionar_receita.php">Receitas</a></li>
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../php/manter_receitas/adicionar_receita.php">Receitas</a></li>
                 </ul>
             </nav>
         </div>

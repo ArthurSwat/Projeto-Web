@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/listar.css">
+    <link rel="stylesheet" href="../../../css/listar.css">
     <title>Listagem de Categorias</title>
 
     
@@ -54,10 +54,10 @@
                 <tfoot>
                     <tr>
                         <th colspan='2'>
-                        <a href='../../html/criar_categoria.html'>Cadastrar nova Categoria</a>
+                        <a href='../../../html/criar_categoria.html'>Cadastrar nova Categoria</a>
                         </th>
                         <th colspan='2'>
-                        <a href='../../index.html'>Ir para o site</a>
+                        <a href='../../../index.html'>Ir para o site</a>
                         </th>
                     </tr>
                 </tfoot>
