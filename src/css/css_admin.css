@@ -1,0 +1,82 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f3f3f3;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #FF6600;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  /* Main */
+  main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #fff;
+  }
+  
+  .admin-panel {
+    background: #FF6600;
+    color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .admin-panel h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Botões */
+  .buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .admin-btn {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+  }
+  
+  .admin-btn:hover {
+    background: #555;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+  

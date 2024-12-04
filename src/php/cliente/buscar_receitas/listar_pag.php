@@ -113,7 +113,7 @@ body {
         </header>
         <nav>
         
-        <a href="listar_cat.php">Categorias</a>
+        <a href="../listar_cat.php">Categorias</a>
         
     </nav>
 <body>
@@ -129,7 +129,7 @@ body {
                     echo "<div class='receitas-item'>";
                     echo "<h2>" . htmlspecialchars($obj->titulo) . "</h2>";
                     echo "<p>" . htmlspecialchars($obj->descricao) . "</p>";
-                    echo "<a href='detalhar.php?id=" . $obj->id . "'>Detalhes</a>";
+                    echo "<a href='detalhes.php?id=" . $obj->id . "'>Detalhes</a>";
                     echo "</div>";
                 }
             } else {
